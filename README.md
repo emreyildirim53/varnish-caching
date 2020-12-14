@@ -31,6 +31,19 @@
 
 ![Started Spring Boot](/demo-images/with-varnish-application-page-load.png)
 
+# Load Test
+
+- Let's put both apps into load test
+
+Without Varnish: at port 8080, with Varnish: at port 8000
+
+```sh
+➜  application git:(master)    ab -n 5000 -c 100 http://localhost:8080/
+```
+```sh
+➜  varnish-demo git:(master)   ab -n 5000 -c 100 http://localhost:8000/
+```
+
 Without Varnish            |  With Varnish
 :-------------------------:|:-------------------------:
 ![](/demo-images/without-varnish-result.png)  |  ![](/demo-images/with-varnish-result.png)
