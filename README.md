@@ -7,7 +7,7 @@
 ```
 - Run the application you built.
 ```sh
-➜  application git:(master) ✗ docker run -e "SPRING_PROFILES_ACTIVE=dev" -p 8080:8080 -t application
+➜  application git:(master)    docker run -e "SPRING_PROFILES_ACTIVE=dev" -p 8080:8080 -t application
 ```
 - The application is ready. (http://localhost:8080/)
 ![Started Spring Boot](/demo-images/without-varnish-application-started.png)
