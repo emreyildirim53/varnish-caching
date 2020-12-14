@@ -10,6 +10,7 @@
 ➜  application git:(master)    docker run -e "SPRING_PROFILES_ACTIVE=dev" -p 8080:8080 -t application
 ```
 - The application is ready. (http://localhost:8080/)
+
 ![Started Spring Boot](/demo-images/without-varnish-application-started.png)
 
 - Page test OK
@@ -23,6 +24,7 @@
 ➜  varnish-demo git:(master) docker-compose up --build 
 ```
 - The application is ready. (http://localhost:8000/)
+
 ![Started Spring Boot](/demo-images/with-varnish-application-started.png)
 
 - Page test OK
