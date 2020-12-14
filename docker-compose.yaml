@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  varnish:
+    build: ./varnish
+    ports:
+      - 8000:80
+
+  application:
+    hostname: application
+    build: ./application
+    environment:
+        - "SPRING_PROFILES_ACTIVE=test"
