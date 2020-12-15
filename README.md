@@ -1,4 +1,4 @@
-What is Varnish Caching? You can review it in my medium post: [Varnish nedir, nasıl çalışır?](https://53-emreyildirim.medium.com/varnish-nedir-nas%C4%B1l-%C3%A7al%C4%B1%C5%9F%C4%B1r-2971264d7999)
+What is Varnish Caching? You can learn it in my medium post: [Varnish nedir, nasıl çalışır?](https://53-emreyildirim.medium.com/varnish-nedir-nas%C4%B1l-%C3%A7al%C4%B1%C5%9F%C4%B1r-2971264d7999)
 
 # Without Varnish
  - Create docker build
@@ -20,7 +20,7 @@ What is Varnish Caching? You can review it in my medium post: [Varnish nedir, na
 
 
 # With Varnish
- - Create docker build
+ - Create docker build and run application
 ```sh
 ➜  varnish-demo git:(master) docker-compose up --build 
 ```
